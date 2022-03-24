@@ -60,6 +60,37 @@ public class LinkedList {
 			}
 		}
 	
+	public void insertAfterThirty(int data, int position) {
+		Node temp;
+		int i;
+		Node newNode = new Node(data);
+		if (head == null) {
+			head = newNode;
+			tail = newNode;
+		} else {
+				newNode.data = data; 
+		        newNode.next = null;
+		        temp = head;
+
+		        for(i=2; i<=position-1; i++)
+		        {
+		            temp = temp.next;
+
+		            if(temp == null)
+		                break;
+		        }
+
+		        if(temp != null) {
+		            newNode.next = temp.next; 
+		            temp.next = newNode;
+		            System.out.println("Data Inserted Succesfully\n");
+		        }
+		        else {
+		            System.out.println("Unable To Insert Data At The Given Position\n");
+		        }
+			}
+		}
+	
 	public void pop() {
 		Node temp;
 

@@ -16,6 +16,10 @@ public class MainClass {
 	    linkedlist.show();
 	    System.out.println();
 	    
+	    linkedlist.insertAfterThirty(40, 3);
+	    linkedlist.show();
+	    System.out.println();
+	    
 //	    linkedlist.pop();
 //	    linkedlist.show();
 //	    System.out.println();
