@@ -91,7 +91,51 @@ public class LinkedList {
 			}
 		}
 	
-	public void pop() {
+	boolean DeleteAfterThirty(int key)
+	{
+		boolean isFound = false;
+    	if(head == null) {
+			System.out.println("List is Empty!!");
+		}
+    	
+    	if(head.data == key) {
+    		head = head.next;
+    		return true;
+    	}
+    	
+		Node currentNode = head;
+		Node previousNode = null;
+		while(currentNode !=null) {
+			if(currentNode.data == key) {
+				isFound = true;
+				break;
+			}
+			previousNode = currentNode;
+			currentNode = currentNode.next;
+		}
+		if(currentNode == null) {
+			return isFound;
+		}
+		currentNode = previousNode.next;
+		previousNode.next = currentNode.next;
+		currentNode.next = null;
+		System.out.println("Data Is Deleted Sucessfully");
+		return isFound;
+		
+	   }
+	
+	int size() {
+		   Node temp=head;
+		   int count = 0;
+		   while(temp!=null)
+		   {
+		     temp=temp.next;
+		     count++; 
+		   }
+		   return count;
+	}
+	
+		public void pop() {
 		Node temp;
 
 	    if(head == null)

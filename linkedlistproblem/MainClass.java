@@ -20,14 +20,19 @@ public class MainClass {
 	    linkedlist.show();
 	    System.out.println();
 	    
+	    linkedlist.DeleteAfterThirty(40);
+	    linkedlist.show();
+	    System.out.println();
+	    
 //	    linkedlist.pop();
 //	    linkedlist.show();
 //	    System.out.println();
 	    
-	    linkedlist.popLast();
-	    linkedlist.show();
-	    System.out.println();
+//	    linkedlist.popLast();
+//	    linkedlist.show();
+//	    System.out.println();
 	    
+	    System.out.println(linkedlist.size());
 	    System.out.println(linkedlist.search(30));
 	}
 }
