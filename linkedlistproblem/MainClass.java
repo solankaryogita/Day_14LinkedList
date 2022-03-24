@@ -16,10 +16,12 @@ public class MainClass {
 	    linkedlist.show();
 	    System.out.println();
 	    
-	    linkedlist.pop();
+//	    linkedlist.pop();
+//	    linkedlist.show();
+//	    System.out.println();
+	    
+	    linkedlist.popLast();
 	    linkedlist.show();
 	    System.out.println();
-	    
-	    
 	}
 }
