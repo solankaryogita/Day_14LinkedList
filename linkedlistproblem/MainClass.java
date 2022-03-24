@@ -23,5 +23,7 @@ public class MainClass {
 	    linkedlist.popLast();
 	    linkedlist.show();
 	    System.out.println();
+	    
+	    System.out.println(linkedlist.search(30));
 	}
 }
