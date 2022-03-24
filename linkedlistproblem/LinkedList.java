@@ -60,6 +60,22 @@ public class LinkedList {
 			}
 		}
 	
+	public void pop() {
+		Node temp;
+
+	    if(head == null)
+	    {
+	        System.out.println("List is already empty.");
+	    }
+	    else
+	    {
+	    	temp = head;
+	        head = head.next;
+
+	        System.out.println("\nData deleted " +temp.data);
+	        System.out.println("Sucessfully Deleted First Node From The List \n");
+	    }
+}
 	public void show() {
 		Node temp = head;
 		while (temp != null) {
