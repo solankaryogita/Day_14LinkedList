@@ -6,33 +6,12 @@ public class MainClass {
 		System.out.println(" Welcome to LinkedList Program");
 		
 	    LinkedList linkedlist = new LinkedList();
-	    linkedlist.add(56);
-	    linkedlist.add(70);
+	    linkedlist.addASC(56);
+	    linkedlist.addASC(70);
+	    linkedlist.addASC(25);
+	    linkedlist.addASC(50);
 	   
 	    linkedlist.show();
 	    System.out.println();
-	    
-	    linkedlist.insertAtMiddle(30, 2);
-	    linkedlist.show();
-	    System.out.println();
-	    
-	    linkedlist.insertAfterThirty(40, 3);
-	    linkedlist.show();
-	    System.out.println();
-	    
-	    linkedlist.DeleteAfterThirty(40);
-	    linkedlist.show();
-	    System.out.println();
-	    
-//	    linkedlist.pop();
-//	    linkedlist.show();
-//	    System.out.println();
-	    
-//	    linkedlist.popLast();
-//	    linkedlist.show();
-//	    System.out.println();
-	    
-	    System.out.println(linkedlist.size());
-	    System.out.println(linkedlist.search(30));
-	}
+	    }
 }

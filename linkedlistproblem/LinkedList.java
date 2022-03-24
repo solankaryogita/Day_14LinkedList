@@ -5,16 +5,21 @@ public class LinkedList {
 	Node head;
 	Node tail;
 	
-	public void add(int data) {
+	void addASC(int data) {
 		Node newNode = new Node(data);
-		if(head == null) {
-		head = newNode;
-		tail = newNode;
-		}
-		else{
-			tail.next = newNode;
-			tail = newNode;
-		}
+	    Node current = head;
+	    Node previous = null;
+	    while(current != null && data > current.data){
+	      previous = current;
+	      current = current.next;
+	    }
+	    // insertion at beginning of the list
+	    if(previous == null){
+	      head = newNode;
+	    }else{
+	      previous.next = newNode;
+	    }
+	    newNode.next = current;
 	}
 	public void append( int data) {
 		
